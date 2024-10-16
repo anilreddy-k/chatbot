@@ -19,8 +19,8 @@ outputparser = StrOutputParser()
 chain = prompt|llm|outputparser
 question = str(st.text_input("what's in your mind?"))
 if question:
-    response = chain.invoke({'text':question})
-    st.write(response)
+    #response = chain.invoke({'text':question})
+    st.write(question)
 
 if __name__ == "__main__":
     main()
