@@ -1,0 +1,7 @@
+langchain
+python-dotenv
+langchain_community
+langchain_core
+sentence_transformers
+langchain-ollama
+streamlit
