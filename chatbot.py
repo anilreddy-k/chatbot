@@ -21,3 +21,6 @@ question = str(st.text_input("what's in your mind?"))
 if question:
     response = chain.invoke({'text':question})
     st.write(response)
+
+if __name__ == "__main__":
+    main()
