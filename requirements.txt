@@ -1,3 +1,4 @@
+os
 langchain
 python-dotenv
 langchain_community
