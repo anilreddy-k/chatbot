@@ -18,5 +18,6 @@ llm = OllamaLLM(model="llama3.2")
 outputparser = StrOutputParser()
 chain = prompt|llm|outputparser
 question = str(st.text_input("what's in your mind?"))
-response = chain.invoke({'text':question})
-st.write(response)
+if question:
+    response = chain.invoke({'text':question})
+    st.write(response)
