@@ -17,6 +17,6 @@ prompt = ChatPromptTemplate.from_messages(
 llm = OllamaLLM(model="llama3.2")
 outputparser = StrOutputParser()
 chain = prompt|llm|outputparser
-question = st.text_input("what's in your mind?")
+question = str(st.text_input("what's in your mind?"))
 response = chain.invoke({'text':question})
 st.write(response)
